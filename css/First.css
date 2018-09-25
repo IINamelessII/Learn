@@ -1,5 +1,5 @@
-#P1 {
-  color: blue;
+body {
+ margin: 0px;
 }
 
 .noselect {
@@ -12,10 +12,23 @@
                                   supported by Chrome and Opera */
 }
 
+#Buttons {
+  display: flex;
+}
+
+.uiContainer {
+}
+
 .ui {
-  display: inline-block;
+
   border: 3px solid #123;
   border-radius: 15px;
+  margin: 10px;
+  height: 40px;
+  width: 200px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 20px;
 
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -27,6 +40,11 @@
 
 }
 
+.ui#currScore {
+  height: 100px;
+  font-size: 36px;
+}
+
 #field {
   width: 800px;
   height: 600px;
@@ -36,11 +54,5 @@
 #target {
   border-radius: 100%;
   background-color: red;
-  position: absolute;
-}
-
-#currScore, #startButton {
-  height: 40px;
-  width: 200px;
-  text-align: center;
+  position: relative;
 }

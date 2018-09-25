@@ -9,8 +9,25 @@
 </head>
 <body>
   <script src="../js/First.js"></script>
-  <div id="currScore" class="ui"></div>
-  <div id="startButton" class="ui" onclick="start()">Start!</div>
+
+  <div id="Buttons">
+
+    <div id="uiContainer0" class"uiContainer">
+      <div id="easyButton" class="ui" onclick="start(3)"> Easy </div>
+      <div id="mediumButton" class="ui" onclick="start(5)"> Medium </div>
+    </div>
+
+    <div id="uiContainer1" class"uiContainer">
+      <div id="currScore" class="ui">Choose your level</div>
+    </div>
+
+    <div id="uiContainer2" class"uiContainer">
+      <div id="hardButton" class="ui" onclick="start(7)"> H.a.r.d. </div>
+      <div id="godButton" class="ui" onclick="start(9)"> MLG GOD </div>
+    </div>
+
+  </div>
+
   <div id="field">
     <div id="target" onclick="next()"></div>
   </div>
