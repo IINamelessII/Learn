@@ -1,6 +1,6 @@
 'use strict';
 const TARGET_SIZE = 80;
-const FIELD_WIDTH = 800;
+const FIELD_WIDTH = 1000;
 const FIELD_HEIGTH = 600;
 
 
@@ -53,7 +53,7 @@ function over() {
   var elmnt = document.getElementById('target');
   elmnt.style.height = "0px";
   elmnt.style.width = "0px";
-  alert("You score is " + score + " points!");
+  document.getElementById('scores').textContent = "You last score is " + score + " points!";
 }
 
 
